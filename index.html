@@ -37,20 +37,7 @@
 .monk{
       visibility: hidden;
     }
-  .laneystart {
-  color:#ffffff;
-  text-align:center;
-}
-
-p {
-  color:#ffffff;
-}
-
-.Laneyone {
-  background-color:red
-}
-
-.Laneytwo {
+  .Laneytwo {
   background-color:orange
 }
 
@@ -92,7 +79,19 @@ p {
 }
 
 #imhiddenbeech {
-  visibility:hidden
+  visibility:hidden;
+}
+
+#LaneyMeow {
+  visibility:hidden;
+}
+
+#LaneyDuckling {
+  visibility:hidden;
+}
+
+#LaneyISevil {
+  visibility:hidden;
 }
  
 </style>
@@ -390,45 +389,55 @@ p {
     <p>
       She's scared of the dark...
     </p>
-    <button class="Laneyone">
+    <button class="Laneyone" type="button" onclick="document.body.style.backgroundColor='black';">
       Switch!
     </button>
-    <button class="Laneytwo">
+    <button class="Laneytwo" type="button" onclick="document.body.style.backgroundColor='#161525';">
       switch?
     </button>
-    <button class="Laneythree">
+    <button class="Laneythree" type="button" onclick="document.getElementById('LaneyMeow').style.visibility='visible';">
       swiiiiiitch
-    </button>
-    <button class="Laneyfour">
+    </button><br>
+    
+    <p id="LaneyMeow">
+      meow
+    </p><br>
+    
+    <button class="Laneyfour" type="button" onclick="document.body.style.backgroundColor='#3e1010';">
       switch please and thank you
     </button>
-    <button class="Laneyfive">
+    <button class="Laneyfive" type="button" onclick="document.body.style.backgroundColor='#000000';">
       swish
     </button>
-    <button class="Laneysix">
+    <button class="Laneysix" type="button" onclick="document.body.style.backgroundColor='#fffb96';">
       Hi
     </button> 
     <button class="Laneyseven" type="button" onclick="document.getElementById('imhiddenbeech').style.visibility='visible';">
       Change Background color
    </button> <br>
     
+    <img src="https://img.buzzfeed.com/buzzfeed-static/static/enhanced/webdr01/2013/5/30/14/anigif_enhanced-buzz-2410-1369939749-19.gif?downsize=700:*&output-format=auto&output-quality=auto" id="LaneyDuckling">
     
-    
-    <button class="cough">
+    <button class="cough" type="button" onclick="document.body.style.backgroundColor='#2a5a1f';">
       *cough*
     </button>
-    <button class="Laneynine">
+    <button class="Laneynine" type="button" onclick="document.getElementById('LaneyDuckling').style.visibility='visible';">
       switch again
     </button>
-    <button class="Laneyten">
+    <button class="Laneyten" type="button" onclick="document.getElementById('LaneyISevil').style.visibility='visible';">
       This doesn't do anything
     </button>
     <button type="button" onclick="document.body.style.backgroundColor='#808B96';" class="Laneyeleven">
       I almost sneezed while making this button
     </button> <br>
-    <button id="imhiddenbeech" onclick="document.body.style.backgroundColor='ffffff';" visibility="hidden">
+    <button id="imhiddenbeech" onclick="document.body.style.backgroundColor='red';">
       SHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
     </button>
+    <p id="LaneyISevil">
+      hehehehehe..... :) I lied
+    </p>
+  </body>
+</html>
   </body>
  
 </html>
